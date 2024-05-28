@@ -1,0 +1,68 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.recommended-recipes {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/background-image.jpg') no-repeat center center/cover; /* เพิ่มเอฟเฟกต์เท่ๆ ด้วย linear-gradient */
+    color: #fff; /* ปรับสีของข้อความให้เหมาะกับพื้นหลัง */
+}
+
+.recommended-recipes h2 {
+    font-size: 28px; /* ปรับขนาดฟอนต์ให้ใหญ่ขึ้น */
+    margin-bottom: 10px; /* ลดระยะห่างด้านล่างของข้อความ */
+}
+
+.recommended-recipes span {
+    color: #e74c3c;
+}
+
+.recipes-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.recipe {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px; /* เพิ่มขอบโค้งให้สวยงามขึ้น */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* เพิ่มเอฟเฟกต์ shadow 3 มิติ */
+    overflow: hidden;
+    margin: 20px;
+    width: calc(30% - 40px); /* ปรับขนาดของบริเวณโดยใช้ calc() */
+    transition: transform 0.3s, box-shadow 0.3s; /* เพิ่มเอฟเฟกต์ transition */
+}
+
+.recipe img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-info {
+    padding: 15px;
+}
+
+.recipe h3 {
+    margin: 10px 0;
+    color: #e74c3c;
+    font-size: 22px; /* ปรับขนาดฟอนต์ให้ใหญ่ขึ้น */
+}
+
+.recipe p {
+    color: #666;
+    margin-bottom: 15px; /* ลดระยะห่างด้านล่างของข้อความ */
+}
+
+.recipe:hover {
+    transform: translateY(-5px); /* เพิ่มเอฟเฟกต์ hover ให้เลื่อนขึ้นลงบน */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* เพิ่มเอฟเฟกต์ shadow 3 มิติเมื่อ hover */
+}

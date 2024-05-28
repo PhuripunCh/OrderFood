@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommended Recipes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="recommended-recipes">
+        <h2>Recommended <span>Recipes</span></h2>
+        <div class="recipes-container">
+            <div class="recipe" data-toggle="modal" data-target="#noodleModal">
+                <img src="img/Noodle.jpg" alt="Noodle">
+                <div class="recipe-info">
+                    <h3>Noodle</h3>
+                    <p>20 mins | 4 serving</p>
+                </div>
+            </div>
+            <div class="recipe" data-toggle="modal" data-target="#stickyRiceModal">
+                <img src="img/sticky-rice-mango.jpg" alt="Mango Sticky Rice">
+                <div class="recipe-info">
+                    <h3>Mango Sticky Rice</h3>
+                    <p>30 mins | 3 serving</p>
+                </div>
+            </div>
+            <div class="recipe" data-toggle="modal" data-target="#saladModal">
+                <img src="img/salad.jpg" alt="Salad">
+                <div class="recipe-info">
+                    <h3>Salad</h3>
+                    <p>15 mins | 0 serving</p>
+                </div>
+            </div>
+            <div class="recipe" data-toggle="modal" data-target="#friedRiceModal">
+                <img src="img/r.jpg" alt="Fried Rice">
+                <div class="recipe-info">
+                    <h3>Fried Rice</h3>
+                    <p>25 mins | 1 serving</p>
+                </div>
+            </div>
+            <div class="recipe" data-toggle="modal" data-target="#TomYumModal">
+                <img src="img/tomyum.jpg" alt="TomYum">
+                <div class="recipe-info">
+                    <h3>Tom Yum</h3>
+                    <p>20 mins | 2 serving</p>
+                </div>
+            </div>
+            <div class="recipe" data-toggle="modal" data-target="#KanomJeenModal">
+                <img src="img/Kanom-Jeen.jpg" alt="Kanom-Jeen">
+                <div class="recipe-info">
+                    <h3>Kanom-Jeen</h3>
+                    <p>30 mins | 1 serving</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modal for Noodle -->
+<div class="modal fade" id="noodleModal" tabindex="-1" role="dialog" aria-labelledby="noodleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="noodleModalLabel">Noodle Recipe</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>This is the recipe for Noodle.</p>
+                <!-- Order form -->
+                <form action="/order" method="post">
+                    <div class="form-group">
+                        <label for="noodleQuantity">Quantity:</label>
+                        <input type="number" class="form-control" id="noodleQuantity" name="noodleQuantity" min="1" required>
+                    </div>
+                    <button type="submit" class="btn btn-success">Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Sticky Rice -->
+<div class="modal fade" id="stickyRiceModal" tabindex="-1" role="dialog" aria-labelledby="stickyRiceModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="stickyRiceModalLabel">Mango Sticky Rice Recipe</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>This is the recipe for Mango Sticky Rice.</p>
+                <!-- Order form -->
+                <form action="/order" method="post">
+                    <div class="form-group">
+                        <label for="stickyRiceQuantity">Quantity:</label>
+                        <input type="number" class="form-control" id="stickyRiceQuantity" name="stickyRiceQuantity" min="1" required>
+                    </div>
+                    <button type="submit" class="btn btn-success">Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Salad -->
+<div class="modal fade" id="saladModal" tabindex="-1" role="dialog" aria-labelledby="saladModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="saladModalLabel">Salad Recipe</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>This is the recipe for Salad.</p>
+                <!-- Order form -->
+                <form action="/order" method="post">
+                    <div class="form-group">
+                        <label for="saladQuantity">Quantity:</label>
+                        <input type="number" class="form-control" id="saladQuantity" name="saladQuantity" min="1" required>
+                    </div>
+                    <button type="submit" class="btn btn-success">Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Fried Rice -->
+<div class="modal fade" id="friedRiceModal" tabindex="-1" role="dialog" aria-labelledby="friedRiceModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="friedRiceModalLabel">Fried Rice Recipe</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>This is the recipe for Fried Rice.</p>
+                <!-- Order form -->
+                <form action="/order" method="post">
+                    <div class="form-group">
+                        <label for="friedRiceQuantity">Quantity:</label>
+                        <input type="number" class="form-control" id="friedRiceQuantity" name="friedRiceQuantity" min="1" required>
+                    </div>
+                    <button type="submit" class="btn btn-success">Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Tom Yum -->
+<div class="modal fade" id="TomYumModal" tabindex="-1" role="dialog" aria-labelledby="TomYumModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="TomYumModalLabel">Tom Yum Recipe</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>This is the recipe for Tom Yum.</p>
+                <!-- Order form -->
+                <form action="/order" method="post">
+                    <div class="form-group">
+                        <label for="tomYumQuantity">Quantity:</label>
+                        <input type="number" class="form-control" id="tomYumQuantity" name="tomYumQuantity" min="1" required>
+                    </div>
+                    <button type="submit" class="btn btn-success">Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Kanom Jeen -->
+<div class="modal fade" id="KanomJeenModal" tabindex="-1" role="dialog" aria-labelledby="KanomJeenModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="KanomJeenModalLabel">Kanom Jeen Recipe</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>This is the recipe for Kanom Jeen.</p>
+                <!-- Order form -->
+                <form action="/order" method="post">
+                    <div class="form-group">
+                        <label for="kanomJeenQuantity">Quantity:</label>
+                        <input type="number" class="form-control" id="kanomJeenQuantity" name="kanomJeenQuantity" min="1" required>
+                    </div>
+                    <button type="submit" class="btn btn-success">Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
